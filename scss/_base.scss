@@ -1,0 +1,32 @@
+$icon-layout: horizontal;
+@import 'icon/*.png';
+@include all-icon-sprites;
+
+.me{
+      width: 300px;
+      height: 600px;
+      background: url('../img/icon-s0f0266362e.png') left center;
+      animation: play 0.8s steps(9) infinite;
+      
+      
+}
+
+@keyframes play{
+      100% { background-position: -2700px; }      
+}
+
+body{
+      
+      background: $bggrad;
+      background-repeat: no-repeat;
+      font-family: $basefont;
+}
+
+
+header{
+      h1{
+            @include box;
+            text-align: center;
+            color: $headcolor;
+      }
+}
